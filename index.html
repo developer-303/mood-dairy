@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Diary</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Mood Diary</h1>
+      <p>Log your daily mood and track your emotional journey.</p>
+    </header>
+
+    <div class="mood-input">
+      <label for="mood">How do you feel today?</label>
+      <select id="mood">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="anxious">Anxious</option>
+        <option value="excited">Excited</option>
+        <option value="hurt">Hurt</option>
+        <option value="angry">Angry</option>
+      </select>
+
+      <textarea id="thoughts" placeholder="Write your thoughts here..."></textarea>
+
+      <button id="saveMood">Save Mood</button>
+    </div>
+
+    <div class="mood-chart">
+      <h2>Your Mood Over Time</h2>
+      <canvas id="moodChart"></canvas>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Mood Diary</p>
+    </footer>
+  </div>
+
+  <script src="/MOOD DAIRY/script.js"></script>
+</body>
+</html>
